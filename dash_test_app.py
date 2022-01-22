@@ -1,27 +1,21 @@
-import json
 import dash
 from dash import dcc
 from dash import html
 from dash.dependencies import Input, Output
-from plotly_example_graph import fig
+from plotly_test_graph import fig
 
-external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
-
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-
-styles = {
-    'pre': {
-        'border': 'thin lightgrey solid',
-        'overflowX': 'scroll'
-    }
-}
+##external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+##app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+app = dash.Dash(__name__)
 
 fig.update_layout(clickmode='event+select')
-
-fig.update_traces(marker_size=20)
+fig.update_traces(marker_size=15)
 
 app.layout = html.Div([
-    html.H1(children='Graph Visualization', style={'textAlign': 'center'}),
+    html.H1(
+        children='Graph Visualization', 
+        style={'textAlign': 'center'}
+    ),
 
     dcc.Graph(
         id='network-graph',
@@ -29,14 +23,7 @@ app.layout = html.Div([
     ),
 
     html.Div(className='row', children=[
-        html.Div([
-            dcc.Markdown("""
-                **Click Data**
-
-                Click on points in the graph.
-            """),
-            html.Pre(id='click-data', style=styles['pre']),
-        ], className='three columns'),
+        html.Div(id='click-data'),
     ])
 ])
 
@@ -45,7 +32,23 @@ app.layout = html.Div([
     Output('click-data', 'children'),
     Input('network-graph', 'clickData'))
 def display_click_data(clickData):
-    return json.dumps(clickData, indent=2)
+    title = 'No node selected'
+    info = 'Please select a node to view related information.'
+
+    if isinstance(clickData, dict):
+        title = clickData['points'][0]['text']
+        info = clickData['points'][0]['customdata']
+
+    return html.Div([
+        html.H2(
+            children=title,
+            style={'textAlign': 'center'}
+        ),
+        html.P(
+            children=info,
+            style={'textAlign': 'center'}
+        ),
+    ])
 
 
 if __name__ == '__main__':
