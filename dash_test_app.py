@@ -8,9 +8,6 @@ from plotly_test_graph import fig
 ##app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 app = dash.Dash(__name__)
 
-fig.update_layout(clickmode='event+select')
-fig.update_traces(marker_size=15)
-
 app.layout = html.Div([
     html.H1(
         children='Graph Visualization', 

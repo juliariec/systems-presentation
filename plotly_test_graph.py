@@ -1,23 +1,23 @@
 import plotly.graph_objects as go
 import networkx as nx
+import pandas as pd
 
-G = nx.Graph()
+nodes_df = pd.read_csv('nodes.csv')
+edges_df = pd.read_csv('edges.csv')
 
-G.add_node(1, pos = (1,1), label = "JC", title = "Software Developer") 
-G.add_node(2, pos = (3,1), label = "AR", title = "Mechanical Engineer")
-G.add_node(3, pos = (2,2), label = "RG", title = "Masters Student")
-G.add_node(4, pos = (1,3), label = "TC", title = "Accountant")
-G.add_node(5, pos = (3,3), label = "EC", title = "Data Scientist")
-G.add_node(6, pos = (2,4), label = "AL", title = "Elementary Teacher")
+G = nx.from_pandas_edgelist(edges_df, 'source', 'target')
 
-G.add_edges_from([(1, 3), (1, 2), (2, 3), (1, 4), (2, 5), (1, 6), (3, 6)])
+for i in sorted(G.nodes()):
+    G.nodes[i]['pos'] = nodes_df.pos[i]
+    G.nodes[i]['label'] = nodes_df.label[i]
+    G.nodes[i]['title'] = nodes_df.title[i]
 
 edge_x = []
 edge_y = []
 
 for edge in G.edges():
-    x0, y0 = G.nodes[edge[0]]['pos']
-    x1, y1 = G.nodes[edge[1]]['pos']
+    x0, y0 = eval(G.nodes[edge[0]]['pos'])
+    x1, y1 = eval(G.nodes[edge[1]]['pos'])
     edge_x.append(x0)
     edge_x.append(x1)
     edge_x.append(None)
@@ -36,7 +36,7 @@ node_y = []
 node_titles = []
 node_info = []
 for node in G.nodes():
-    x, y = G.nodes[node]['pos']
+    x, y = eval(G.nodes[node]['pos'])
     node_x.append(x)
     node_y.append(y)
     node_titles.append(G.nodes[node]['label'])
@@ -78,3 +78,8 @@ fig = go.Figure(
         yaxis=dict(showgrid=False, zeroline=False, showticklabels=False)
     )
 )
+
+fig.update_layout(clickmode='event+select')
+fig.update_traces(marker_size=15)
+
+fig.show()
