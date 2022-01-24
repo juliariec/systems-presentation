@@ -1,16 +1,17 @@
+import os
 import dash
 from dash import dcc
 from dash import html
 from dash.dependencies import Input, Output
-from plotly_test_graph import fig
+from graph import fig
 
-##external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
-##app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 app = dash.Dash(__name__)
+
+server = app.server
 
 app.layout = html.Div([
     html.H1(
-        children='Graph Visualization', 
+        children='Exploring Social Connectedness', 
         style={'textAlign': 'center'}
     ),
 
@@ -34,17 +35,17 @@ def display_click_data(clickData):
 
     if isinstance(clickData, dict):
         title = clickData['points'][0]['text']
-        info = clickData['points'][0]['customdata']
+        info = clickData['points'][0]['customdata'] 
 
     return html.Div([
         html.H2(
             children=title,
             style={'textAlign': 'center'}
         ),
-        html.P(
-            children=info,
-            style={'textAlign': 'center'}
-        ),
+        dcc.Markdown(
+            children=info, 
+            style={'margin': '0 auto', 'padding': '0 1rem', 'maxWidth': '800px'}
+        )
     ])
 
 

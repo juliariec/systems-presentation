@@ -1,8 +1,175 @@
-﻿pos,label,title
-"(0, 1)",LC,Undergrad Student
-"(1, 1)",JC,Software Developer
-"(3, 1)",AR,Mechanical Engineer
-"(2, 2)",RG,Masters Student
-"(1, 3)",TC,Accountant
-"(3, 3)",EC,Data Scientist
-"(2, 4)",AL,Elementary Teacher
+﻿x,y,label,data,node
+7,4,Social Connectedness,"from [Ang](https://www.sciencedirect.com/science/article/pii/S1040260818301874): 
+
+> Social connectedness is a general term broadly encompassing the quantity, quality, frequency, type and network structure of one's relationships with friends, family, and the community. Being socially connected depends on one's relationships with close friends and family, as well as broader aspects of social life such as participation in social activities organized by clubs and associations.
+
+From [Toepoel](https://pubmed.ncbi.nlm.nih.gov/23874058/):
+
+- Social connectedness is difficult to measure — quantity and quality are both important aspects
+    - **Objective measures:** number of social gatherings, number of close contacts
+    - **Subjective measures:** satisfaction with social contacts, feelings of isolation or loneliness
+- The concept has circular logic: it leads to positive outcomes (e.g. participation in group activities) and is also a result of those same outcomes
+- Determining the mechanisms that cause the 'virtuous circle' can be unclear",0
+5.5,6.5,Social Capital,"### Social Capital and Health: A Review of Prospective Multilevel Studies
+
+[View source](https://dash.harvard.edu/bitstream/handle/1/11879243/3798618.pdf)
+
+According to Coleman and Putnam, **social capital** refers to features of a social structure that facilitate actions of people in the structure. 
+
+In the **social cohesion** definition, social capital is understood in terms of the structure as a whole, whereas in the **network theory** it's framed on an individual level. 
+
+Social capital can also be subdivided into four kinds: 
+
+1. **Structural:** observable characteristics like social organization or civic engagement
+2. **Cognitive:** someone's subjective perception of characteristics like trust and reciprocity
+3. **Bonding:** relationships between members of the social structure with shared characteristics
+4. **Bridging:** connections between individuals with different amounts of power
+
+### Relationship to social connectedness
+
+From Kawachi and Berkman:
+
+> A useful distinction can be drawn here between social capital and social networks. Social networks are a characteristic that can (and most often has been) be measured at the individual level, whereas social capital should be properly considered a feature of the collective (neighborhood, community, society) to which the individual belongs. It makes no sense to measure an individual's social capital. In theory, a well-connected individual (one who has lots of friends and close relatives) could experience different life chances and health outcomes depending on whether he or she resides in an environment that is rich or poor in social capital. (176-177)
+
+An individual's social connectedness may contribute to a social structure's bonding social capital.
+
+### Relationship to health
+
+There have been studies investigating the relationship between social capital and health. One study ([Social Cohesion, Social Capital, and Health](https://oxfordmedicine.com/view/10.1093/med/9780195377903.001.0001/med-9780195377903-chapter-8) by Kawachi and Berkman) suggested four ways that social capital can influence health:
+
+1. Diffusion of knowledge on health promotion
+2. Maintenance of healthy behavioral norms through informal social control
+3. Promotion of access to local services and amenities
+4. Psychological processes that provide affective support and mutual respect
+
+A relationship between social capital and health could be causal, but it could go either way (having social capital improves health outcomes **or** being healthy increases social capital).
+
+#### Social capital, health, and life satisfaction in 50 countries
+
+[View source](https://www.sciencedirect.com/science/article/pii/S1353829211001146)
+
+Using a study that asked questions relating to bonding, bridging, and linking social capital and self-rated health and life satisfaction, Elgar et al. found that social capital's health benefits for individuals are stronger in countries with more social capital. 
+
+#### The social context of well-being
+
+[View source](https://www.semanticscholar.org/paper/The-social-context-of-well-being.-Helliwell-Putnam/f9298edea85e5c60d4c5ef8b812e2dd2e15d653e)
+
+This study also finds that social capital is strongly linked to a person's subjective well-being.",1
+3,5,Physical Health,"Subtopics: 'Cognition', 'Mortality Risk', 'Blood Pressure', 'Immune System', 'Disease' 
+
+### Relationship to social connectedness
+
+[View source](https://pubmed.ncbi.nlm.nih.gov/20668659/)
+
+The two main theoretical models for how social relationships influence health are the **stress buffering model** and the **main effects model**.
+
+In the stress buffering model, social relationships are thought to provide resources that improve responses to stress and therefore buffer their effects on health.
+
+The main effects model suggests that social relationships are associated with other influences that improve health, such as following norms for healthy behaviours.
+
+#### A qualitative study of social connectedness and its relationship to community health programs in rural Chiapas, Mexico
+
+[View source](https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-020-09008-6)
+
+Health interventions themselves can increase social connectedness, since community health clinics can link patients to resources, improve communication, and provide a space for community interactions.",2
+2,2,Immune System,"### Social Regulation of Human Gene Expression: Mechanisms and Implications for Public Health
+
+[View source](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3786751/)
+
+Studies in social genomics can reveal certain gene programs that are sensitive to social conditions, but may not explain *why* they evolved that way. For example, it's been shown that when faced with socially adverse circumstances, the human body shifts resources from antiviral to inflammatory defenses. One explanation for this is that in hunter-gatherer conditions, a robust social life meant an increased vulnerability to diseases transmitted through social contact (like viral infections), but being isolated decreased that risk and instead increased the likelihood of wound-mediated bacterial infection.",3
+3.5,8.5,Cognition,"### Perceived social isolation and cognition
+
+[View source](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2752489/)
+
+A longitudinal study by Wilson et al. involving 823 older adults indicates that loneliness is a predictor of cognitive decline in domains such as global cognition, perceptual speed, and visuospatial ability.
+
+### An Evaluation of Social Bridging and Bonding Mechanisms in the Association of Social Networks and Cognitive Function
+
+[View source](https://europepmc.org/article/PMC/PMC8680955)
+
+This study found that measures associated with social bridging were predictive of increased cognitive function in older adults but that those associated with social bonding had no observable effect.",4
+1,4.5,Blood Pressure,"### Loneliness is a unique predictor of age-related differences in systolic blood pressure
+
+[View source](https://pubmed.ncbi.nlm.nih.gov/16594800/)
+
+In a study of 229 Americans, Hawkley et al. found that loneliness was associated with elevated systolic blood pressure.",5
+3.5,1,Disease,"### Social connectedness can inhibit disease transmission: Social organization, cohesion, village context and infection risk in rural Ecuador
+
+[View source](https://europepmc.org/article/MED/23078481)
+
+A study of 18 villages in a northern Ecuadorian province conducted by Zelner et al. found that villages with high degrees of connectivity have lower risk of diarrheal disease and fever. They posit that villages which are more remote experience decreased risk not only because they have less contact with outside individuals, but because there is more cohesion and social organization which helps improve sanitation and hygiene.",6
+2.5,7.5,Mortality Risk,"### Social relationships and mortality risk: a meta-analytic review
+
+[View source](https://pubmed.ncbi.nlm.nih.gov/20668659/)
+
+This meta-analytic review extracted data from 148 studies and found that individuals with adequate social relationships have a 50% greater likelihood of survival (an odds ratio (OR) of 1.5) than those with insufficient relationships — comparable with quitting smoking. Social relationships are more predictive of mortality risk when complex measures of social integration are used (OR=1.91) rather than a simple structural measure such as marital status (OR=1.33).",7
+9.5,5,Mental Health,"Subtopics: 'Depression'",8
+10.5,4.5,Depression,"### Social group memberships protect against future depression, alleviate depression symptoms and prevent depression relapse
+
+[View source](https://pubmed.ncbi.nlm.nih.gov/24331897/)
+
+- Research suggests that low social connectedness is related to depression and increases vulnerability to depression in the future
+- Study investigates the benefits of social connectedness for people who already have depression and its protective benefits for those who may become depressed
+- Uses population data to show that belonging to fewer social groups is a predictor of depression and that the benefits of social groups are higher for people with depression than those without",9
+9,6.5,Community Engagement,"Subtopics: 'Religiosity' and 'Volunteering'",10
+9.5,8.5,Religiosity,"### Religion, Social Networks, and Life Satisfaction
+
+[View source](https://www.semanticscholar.org/paper/Religion%2C-Social-Networks%2C-and-Life-Satisfaction-Lim-Putnam/622be34f0d7341c2c252647bb14d30679bf3ef4f)
+
+- Used data from the Faith Matters Study in the US to further understand how religion affects life satisfaction
+- Results indicated that for religion to have a positive effect on life satisfaction, respondents must regularly attend religious services and have social relationships within the religious community (accompanied by a personal sense of religious identity)",11
+11,7,Volunteering,"### Self-Esteem, Self-Efficacy, and Social Connectedness as Mediators of the Relationship Between Volunteering and Well-Being
+
+[View source](https://www.semanticscholar.org/paper/Self-Esteem%2C-Self-Efficacy%2C-and-Social-as-Mediators-Brown-Hoye/7ce4f9ce2c2f04af8583a595b349571705a627e0)
+
+- Brown, Hoye, and Nicholson use survey data from ~3000 participants in Victoria, Australia to investigate the relationship between volunteering and well-being
+- Results showed that the increased social connectedness associated with volunteering was the strongest first step in higher well-being; self-esteem and self-efficacy also contributed to the mediating relationship",12
+8.5,9,Leisure Activities,"### Ageing, Leisure, and Social Connectedness: How could Leisure Help Reduce Social Isolation of Older People?
+
+[View source](https://www.semanticscholar.org/paper/Ageing%2C-Leisure%2C-and-Social-Connectedness%3A-How-Help-Toepoel/af5d2749773ce028f8ef7d863c1674a74adefc9a)
+
+- Study investigates the relationship between older people's social relationships and their participation in leisure activities
+- Surveyed ~5900 Dutch participants about their participation in 10 different leisure categories
+- Found that the rate of participation is lower for older people, but their quality of social interactions was higher, and that active leisure activities (e.g. voluntary work, sports, and reading) are predictors of social connectedness whereas passive leisure activities (e.g. television and radio) are not",13
+6.5,8.5,Age and Cohort,"### Life course social connectedness: Age-cohort trends in social participation
+
+[View source](https://www.sciencedirect.com/science/article/pii/S1040260818301874)
+
+This paper sets out to investigate the question: are changes in Americans' social connectedness a consequence of the change in population age composition or of cohort changes? 
+
+Since social disengagement or isolation is considered more common among older people, many studies focus on their social connectedness; however, it is also necessary to study younger populations so that comparisons can be made.
+
+Focusing on the ""social participation"" measure of social connectedness, Ang finds that informal social participation decreases with age, but formal social participation increases, which contradicts the idea that older adults socially disengage entirely. He also finds that informal social participation remains stable across cohorts.",14
+9,2.5,Technology,"### The Effect of Information Communication Technology Interventions on Reducing Social Isolation in the Elderly: A Systematic Review
+
+[View source](https://pubmed.ncbi.nlm.nih.gov/26822073/)
+
+In a review conducted by Chen and Schultz of 25 publications concerning the use of information and communication technologies (ICT) to reduce social isolation in the elderly, ICT use was found to temporarily positively affect social connectedness and support (results did not last longer than 6 months). The evidence for ICT's effect on loneliness was inconclusive.",15
+8,1.5,Transportation,"### Transport and Children's Wellbeing
+
+[View source](https://www.sciencedirect.com/science/article/pii/B978012814694100004X?via%3Dihub)
+
+- Transportation has a relationship to a child's social wellbeing by influencing their social connections, interactions, and support
+- It can influence these intrinsically (interactions during a trip) and through access (helping them reach places involving social activity)",16
+5.5,3.5,Urban Design,"### Social Capital and the Built Environment: The Importance of Walkable Neighborhoods
+
+[View source](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1448008/)
+
+Leyden surveyed 279 households in Galway, Ireland to investigate the relationship between neighbourhood and social capital. He assessed social capital by asking how well respondents knew their neighbours and how socially engaged they were and by using a Political Participation Index and a Trust Index. Neighbourhood walkability was the only measure that had a statistically significant effect on all four of these measures of social capital, and it was the most important predictor of the Trust Index. It seems that a correlation between the two concepts exists, but the study used a small sample size and cannot assert that neighbourhood walkability causes social engagement and not vice versa (that socially engaged people choose to live in more walkable neighbourhoods).
+
+### Outdoor public recreation spaces and social connectedness among adolescents
+
+[View source](https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-022-12558-6)
+
+- Study of adolescents in Melbourne, Australia found no significant association between social connectedness and visiting or engaging in physical activity in outdoor public recreation spaces",17
+4.5,1.5,Brain Development,"### Social connectedness, mental health and the adolescent brain
+
+[View source](https://pubmed.ncbi.nlm.nih.gov/28506925/)
+
+- Brain maturation and the social environment in the adolescent period have reciprocal interactions: differences in social ability, partially determined by genetic brain influences, affect social ties, and social networks influence individual behaviour and mental health
+- These reciprocal interactions can increase risk or promote resilience for future health outcomes, including mental illness",18
+7.5,7,Bullying,"### Remaining connected in the face of cyberbullying: Why social connectedness is important for mental health
+
+[View source](https://onlinelibrary.wiley.com/doi/10.1002/pits.22232)
+
+- Study surveyed 229 adolescents, and the results indicated that social connectedness may form a protective buffer against negative mental health outcomes brought about by cyberbullying",19
