@@ -6,7 +6,7 @@ from dash import html
 from dash.dependencies import Input, Output
 from graph import fig
 
-app = dash.Dash(__name__)
+app = dash.Dash(__name__, title="Exploring Social Connectedness")
 
 server = app.server
 
